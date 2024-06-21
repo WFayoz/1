@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#CardHover:hover {
+  background: rgba(0, 167, 149, 0.2);
+}
+
+.main__bg {
+  background-image: url(../public/main_back.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backMoin {
+  background-image: url(../public/mountain.webp);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+.relative:hover .language-selector {
+  display: none;
+}
+
+.relative:hover .language-options {
+  display: flex;
+}
+
+.relative:hover ~ .menu-items {
+  display: none;
+}
+
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+
+button {
+  cursor: pointer;
+}
+*{
+  transition:  300ms;
+}
