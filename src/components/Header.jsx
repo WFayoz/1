@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Logo from "../../public/Logo.svg";
 import { FaGlobeAmericas } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showLanguages, setShowLanguages] = useState(false);
@@ -22,29 +23,32 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className=" w-full  z-50 fixed"  ref={navRef}>
+    <div className="w-full   z-50 fixed"  ref={navRef}>
       <div
-        className="max-w-[1200px] mx-auto py-3 flex items-center justify-between "
+        className="max-w-[1200px] backdrop-blur-xl  mx-auto py-3 flex items-center justify-between "
       >
+        <Link to="/">
         <img src={Logo} alt="" className=" object-cover" />
+
+        </Link>
         <ul
           className={`items-center gap-10 ${showLanguages ? "hidden" : "flex"}`}
         >
-          <li className="text-[#ffffff99] font-medium hover:text-white cursor-pointer text-xl">
+          <Link to={"/about"} className="text-[#ffffff99] font-medium hover:text-white cursor-pointer text-xl">
             ABOUT US
-          </li>
-          <li className="text-[#ffffff99] font-medium hover:text-white cursor-pointer text-xl">
+          </Link>
+          <Link to={"/service"} className="text-[#ffffff99] font-medium hover:text-white cursor-pointer text-xl">
             SERVICES
-          </li>
-          <li className="text-[#ffffff99] font-medium hover:text-white cursor-pointer text-xl">
+          </Link>
+          <Link to={"/portfolio"} className="text-[#ffffff99] font-medium hover:text-white cursor-pointer text-xl">
             PORTFOLIO
-          </li>
-          <li className="text-[#ffffff99] font-medium hover:text-white cursor-pointer text-xl">
+          </Link>
+          <Link to={"/career"} className="text-[#ffffff99] font-medium hover:text-white cursor-pointer text-xl">
             CAREER
-          </li>
-          <li className="text-[#ffffff99] font-medium hover:text-white cursor-pointer text-xl">
+          </Link>
+          <Link to="/blog" className="text-[#ffffff99] font-medium hover:text-white cursor-pointer text-xl">
             BLOG
-          </li>
+          </Link>
           <li className="text-[#83a3a3] font-medium hover:text-white cursor-pointer text-xl">
             +998 71 <span className="text-white text-xl">200 70 07</span>
           </li>

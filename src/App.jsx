@@ -9,10 +9,10 @@ import About from "./components/World";
 
 const App = () => {
   return (
-    <div>
+    <>
       <div className="main__bg">
         <div className="backMoin">
-            <Navbar />
+          <Navbar />
           <Hero />
         </div>
       </div>
@@ -21,7 +21,7 @@ const App = () => {
       <Services />
       <Partners />
       <Footer />
-    </div>
+    </>
   );
 };
 

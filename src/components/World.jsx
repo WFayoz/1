@@ -100,7 +100,7 @@ const About = () => {
           </div>
           <div>
             <p className="text-xl font-bold text-slate-500 flex items-center justify-center gap-5 mb-5">
-            <div className="w-[32px] border-[#ffffff] h-0  opacity-25 border"></div>
+              <div className="w-[32px] border-[#ffffff] h-0  opacity-25 border"></div>
               <span className="text-[#00ad9c] text-xl font-bold">
                 IN THE WORLD
               </span>
